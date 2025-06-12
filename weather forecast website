@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCWeather | Travel Agency</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <header>
+        <img src="images/travel-logo.png" alt="Travel Agency Logo" class="logo">
+        <h1>Travel With MC</h1>
+        <p>Check the 7-day weather outlook for your Europeam dream destination</p>
+    </header>
+    
+    <div class="container">
+        <div class="controls">
+            <select id="city-select">
+                <option value="">Select a city</option>
+                </select>
+            
+            <button id="get-weather">Get Forecast</button>
+            
+            <div class="unit-toggle">
+                <label>Temperature:</label>
+                <button id="celsius-btn" class="active">°C</button>
+                <button id="fahrenheit-btn">°F</button>
+            </div>
+        </div>
+        
+        <div id="weather-results">
+            <div class="loading" style="display: none;">Loading weather data...</div>
+            <div class="error" style="display: none;"></div>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
